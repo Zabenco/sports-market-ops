@@ -1,0 +1,54 @@
+# Site configuration. Built with Zensical (reads this file directly).
+# Change the four URL/name lines below if you rename the repo.
+
+site_name: Ethan Zabenco
+site_description: Settlement casebook, live calls, and tools for sports prediction markets.
+site_url: https://markets.zaben.co/
+repo_url: https://github.com/Zabenco/sports-market-ops
+repo_name: Zabenco/sports-market-ops
+edit_uri: ""
+
+copyright: Ethan Zabenco. Independent work, not affiliated with Kalshi or any sportsbook.
+
+theme:
+  name: material
+  language: en
+  font:
+    text: Public Sans
+    code: IBM Plex Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - search.highlight
+    - toc.follow
+    - content.footnote.tooltips
+
+extra:
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - tables
+  - footnotes
+  - admonition
+  - attr_list
+  - def_list
+  - toc:
+      permalink: true
